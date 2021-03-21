@@ -6,30 +6,6 @@ using System.Threading.Tasks;
 
 namespace fans
 {
-  public class State
-  {
-    public string Name;
-    public Dictionary<char, State> Transitions;
-    public bool IsAcceptState;
-  }
-
-
-  public class FA1
-  {
-    public bool? Run(IEnumerable<char> s)
-    {
-      return false;
-    }
-  }
-
-  public class FA2
-  {
-    public bool? Run(IEnumerable<char> s)
-    {
-      return false;
-    }
-  }
-
   class Program
   {
     static void Main(string[] args)

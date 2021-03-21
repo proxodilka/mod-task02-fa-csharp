@@ -69,6 +69,30 @@ namespace NET
             FA2 fa = new FA2();
             bool? result = fa.Run(s);
             Assert.IsTrue(result == false);
-        }     
-    }
+        }
+        [TestMethod]
+        public void TestMethod9()
+        {
+          String s = "11";
+          FA2 fa = new FA2();
+          bool? result = fa.Run(s);
+          Assert.IsTrue(result == true);
+        }
+        [TestMethod]
+        public void TestMethod10()
+        {
+          String s = "00";
+          FA2 fa = new FA2();
+          bool? result = fa.Run(s);
+          Assert.IsTrue(result == true);
+        }
+        [TestMethod]
+        public void TestMethod11()
+        {
+          String s = "";
+          FA2 fa = new FA2();
+          bool? result = fa.Run(s);
+          Assert.IsTrue(result == true);
+        }
+  }
 }
